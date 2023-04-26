@@ -1,0 +1,7 @@
+CREATE TABLE shoes (id INTEGER, name TEXT, color TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO shoes VALUES (1,"sandals", "black", 5, 15), (2, "flats","beige", 5, 5), (3,"heels", "white", 10, 25), (4,"sneakers", "white", 10, 30);
+SELECT*FROM shoes
+ORDER BY price;
+SELECT SUM (quantity) FROM shoes GROUP BY color;
+
+## I created this store database, then ordered everything by price. After I wanted the sum of each item quantity grouped by their color.
